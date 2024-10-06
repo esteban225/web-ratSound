@@ -34,7 +34,7 @@ body {
     transition: 2s;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 3px 3px 20px 5px rgb(227, 3, 3);
     transition: 2s;
 }
@@ -48,7 +48,7 @@ body {
 }
 
 .image:hover {
-    transform: scale(1.1) rotate(10deg); 
+    transform: scale(1.1) rotate(10deg);
 }
 
 .img {
@@ -58,7 +58,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     margin: 10px;
-    color: white ;
+    color: white;
 }
 
 .img h1 {
@@ -88,9 +88,34 @@ body {
     color: white;
 }
 
-.info .services ul{
+.info .services ul {
     list-style: circle;
     font-size: 20px;
+}
+
+.galleryPhotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+div.gallery {
+    margin: 10px;
+    float: left;
+    width: 300px;
+}
+
+div.gallery:hover {
+    box-shadow: 3px 3px 20px 5px rgb(227, 193, 3);
+    border-radius: 10px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .links {
@@ -100,22 +125,22 @@ body {
     justify-content: space-evenly;
 }
 
-.into1:hover{
+.into1:hover {
     box-shadow: 3px 3px 20px 5px rgb(3, 70, 227);
     border-radius: 6px;
 }
 
-.into2:hover{
+.into2:hover {
     box-shadow: 3px 3px 20px 5px rgb(3, 227, 89);
     border-radius: 10px;
 }
 
-.into3:hover{
+.into3:hover {
     box-shadow: 3px 3px 20px 5px rgb(190, 3, 227);
     border-radius: 10px;
 }
 
-.into4:hover{
+.into4:hover {
     box-shadow: 3px 3px 20px 5px rgb(3, 227, 227);
     border-radius: 10px;
 }
@@ -131,12 +156,15 @@ body {
 }
 
 footer {
-    color: white;
-    background-color: black;
+    margin-top: 60px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
     text-align: center;
-    margin-top: 50px;
-    font-size: 20px;
-    padding: 30px;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Open Sans', sans-serif;
 }
 
 footer a {
@@ -145,36 +173,114 @@ footer a {
 }
 
 footer a:hover {
+    text-decoration: underline;
     color: #FFC107;
 }
 
-@media (max-width: 320px) {
+footer .containerFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+}
+
+footer .social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 450px) {
     .card {
-        width: 60%;
-        padding: 20px;
+        width: 80%;
+        padding: 10px;
     }
 
-    .name {
-        font-size: 24px;
+    .card:hover {
+        box-shadow: 3px 3px 20px 5px rgb(227, 3, 3);
+        transition: 3s;
     }
 
-    .info {
-        font-size: 16px;
+    .img h1,
+    .info .services h3 {
+        font-size: 20px;
+    }
+
+    .info,
+    .info .infoCard,
+    .contactenos,
+    .info .services ul {
+        font-size: small;
+        margin: 10px;
+        text-align: center;
     }
 
     .image {
-        width: 20vh;
+        width: 25vh;
+    }
+
+    .galleryPhotos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    div.gallery {
+        margin: 10px;
+        float: left;
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    div.gallery:hover {
+        box-shadow: 3px 3px 20px 5px rgb(227, 193, 3);
+        border-radius: 10px;
+    }
+
+    div.gallery img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
     }
 
     .links {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .links div {
-        margin: 20px 0;
+        margin: 10px;
     }
 
     .links img {
-        width: 30px;
+        width: 40px;
+    }
+
+    .into1:hover {
+        box-shadow: 3px 3px 20px 5px rgb(3, 70, 227);
+        border-radius: 6px;
+    }
+
+    .into2:hover {
+        box-shadow: 3px 3px 20px 5px rgb(3, 227, 89);
+        border-radius: 10px;
+    }
+
+    .into3:hover {
+        box-shadow: 3px 3px 20px 5px rgb(190, 3, 227);
+        border-radius: 10px;
+    }
+
+    .into4:hover {
+        box-shadow: 3px 3px 20px 5px rgb(3, 227, 227);
+        border-radius: 10px;
     }
 }
