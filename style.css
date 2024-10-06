@@ -1,0 +1,180 @@
+html,
+body {
+    margin: 0;
+    background: url('./image/456184171_823464286652134_766843595848868561_n.jpg');
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.9);
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 45px;
+    box-shadow: 3px 3px 20px 5px rgb(3, 70, 227);
+    transition: 2s;
+}
+
+.card:hover{
+    box-shadow: 3px 3px 20px 5px rgb(227, 3, 3);
+    transition: 2s;
+}
+
+
+.image {
+    border-radius: 50%;
+    width: 40vh;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image:hover {
+    transform: scale(1.1) rotate(10deg); 
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+    color: white ;
+}
+
+.img h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 16px 7px 17px rgba(227, 3, 3, 0.79);
+    margin-top: 30PX;
+    font-size: 40px;
+    text-align: center;
+}
+
+.info {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(211, 208, 208);
+    margin-top: 30px;
+}
+
+.info .infoCard,
+.contactenos {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.info .services h3 {
+    text-shadow: 16px 7px 17px rgba(3, 70, 227, 0.79);
+    font-size: 30px;
+    color: white;
+}
+
+.info .services ul{
+    list-style: circle;
+    font-size: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.into1:hover{
+    box-shadow: 3px 3px 20px 5px rgb(3, 70, 227);
+    border-radius: 6px;
+}
+
+.into2:hover{
+    box-shadow: 3px 3px 20px 5px rgb(3, 227, 89);
+    border-radius: 10px;
+}
+
+.into3:hover{
+    box-shadow: 3px 3px 20px 5px rgb(190, 3, 227);
+    border-radius: 10px;
+}
+
+.into4:hover{
+    box-shadow: 3px 3px 20px 5px rgb(3, 227, 227);
+    border-radius: 10px;
+}
+
+.links div {
+    margin: 50px 10px 10px 10px;
+    flex-basis: auto;
+}
+
+.links img {
+    width: 50px;
+    height: auto;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: #FFC107;
+}
+
+@media (max-width: 320px) {
+    .card {
+        width: 60%;
+        padding: 20px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .info {
+        font-size: 16px;
+    }
+
+    .image {
+        width: 20vh;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+
+    .links div {
+        margin: 20px 0;
+    }
+
+    .links img {
+        width: 30px;
+    }
+}
